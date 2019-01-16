@@ -1,0 +1,99 @@
+<!doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>html table</title>
+      <style media="screen">
+        table {
+          border:1px solid black;
+          width: 100%;
+          text-align: center;
+          height: auto;
+        }
+        h1 {
+          height: 20px;
+          width: auto;
+          backgroud-color: white;
+          text-align: center;
+          color: green;
+          font-weight: bold;
+        }
+        caption {
+          font-size: 30px;
+          background-color: orange;
+          width: auto;
+          height: 40px;
+          color: navy;
+          font-weight: bold;
+          text-align: center;
+        }
+        thead {
+          width: auto;
+          height: auto;
+          font-size: 30px;
+          text-align: center;
+          color: white;
+          background-color: green;
+        }
+        tfoot {
+          width: auto;
+          height: auto;
+          font-size: 10px;
+          text-align: center;
+          color: white;
+          background-color: green;
+        }
+
+        .style_s1 {
+          color: white;
+          background-color: red;
+          font-weight: bold;
+          width: 25%;
+        }
+        tbody {
+          width: auto;
+          height: auto;
+          font-size: 30px;
+          text-align: center;
+          background-color: green;
+          border-color: black;
+        }
+      </style>
+    </head>
+
+    <body>
+      <h1>HTML 테이블</h1>
+      <table>
+        <caption>인물에 관한 책</caption>
+        <thead>
+          <tr>
+            <td>제목</td>
+            <td>저자</td>
+            <td>출판사</td>
+            <td>가격</td>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class=".style_s1">인물로 보는 삼국사</td>
+          <td>정구복</td>
+          <td rowspan="3">시아</td>
+          <td rowspan="3">14000원</td>
+        </tr>
+        <tr>
+          <td class=".style_s1">인물로 보는 고려사</td>
+          <td>송은명</td>
+        </tr>
+        <tr>
+          <td class=".style_s1">인물로 보는 조선사</td>
+          <td>김형광</td>
+        </tr>
+      </tbody>
+        <tfoot>
+          <tr align="center">
+            <td colspan="4">세계사와 함께 읽는 한국사도 읽어보세요.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </body>
+  </html>
